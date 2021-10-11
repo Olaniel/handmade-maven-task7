@@ -20,7 +20,7 @@ public class Main {
         System.out.println("F(x) = " + Calculate(a,b,h));
     }
 
-    public static double Calculate(double leftBorder, double rightBorder, double step){
+    public static double Calculate(double leftBorder, double rightBorder, double step){// Методы с большой буквы - закопайте меня обратно, кому и что я объясняла.
         if (leftBorder>rightBorder || step<=0){
             return -1;
         }
@@ -48,7 +48,8 @@ public class Main {
             return true;
         }
         else{
-            System.out.print("Right border cannot be less than the left one! Try again: ");
+            System.out.print("Right border cannot be less than the left one! Try again: ");// если вывод инфы пользователю об успешном сценарии здесь делать нельзя, то почему вдруг можно выводить инфу об ошибке
+            // на инфу об ошибке другие законы распространяются?
             return false;
         }
     }
